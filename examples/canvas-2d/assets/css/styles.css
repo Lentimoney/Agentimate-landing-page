@@ -1,0 +1,4 @@
+/* Import the main styles.css file */
+@import url('/examples/assets/css/styles.css');
+
+/* Add any canvas-2d specific styles here */ 

@@ -1,4 +1,4 @@
-import { animate, createTimer, utils } from '../../lib/anime.esm.js';
+import anime from '../../lib/anime.esm.js';
 
 const canvasEl = document.querySelector('canvas');
 const ctx = canvasEl.getContext('2d', { alpha: false });
@@ -24,7 +24,7 @@ function createParticule(x, y) {
   return {
     x,
     y,
-    color: utils.randomPick(colors),
+    color: anime.utils.randomPick(colors),
     radius: 1,
   }
 }
@@ -40,18 +40,20 @@ setCanvasSize();
 window.addEventListener('resize', setCanvasSize);
 
 function animateParticule(p, i) {
-  const newX = utils.random(0, viewport.width);
+  const newX = anime.utils.random(0, viewport.width);
   const diffX = newX - p.x;
   const durX = Math.abs(diffX * 20);
-  const newY = utils.random(0, viewport.height);
+  const newY = anime.utils.random(0, viewport.height);
   const diffY = newY - p.y;
   const durY = Math.abs(diffY * 20);
-  animate(p, {
-    x: { to: newX, duration: durX },
-    y: { to: newY, duration: durY },
-    radius: utils.random(2, 6),
-    ease: 'out(1)',
-    onComplete: () => { animateParticule(p, i); }
+  anime({
+    targets: p,
+    x: newX,
+    y: newY,
+    radius: anime.utils.random(2, 6),
+    duration: Math.max(durX, durY),
+    easing: 'easeOutQuad',
+    complete: () => { animateParticule(p, i); }
   });
 }
 
@@ -61,8 +63,8 @@ for (let i = 0; i < maxParticules; i++) {
   animateParticule(p, i);
 }
 
-createTimer({
-  onUpdate: self => {
+anime.timeline({
+  update: function(anim) {
     ctx.globalCompositeOperation = 'source-over';
     ctx.globalAlpha = .1;
     ctx.fillStyle = '#000';

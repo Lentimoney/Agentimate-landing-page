@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .logo-shield { fill: #1B4D3E; }
+            .face-profile { fill: #FFFFFF; }
+            .accent { fill: #FF7F50; }
+        </style>
+    </defs>
+    <g id="irish-derm-tutor-logo">
+        <path class="logo-shield" d="M250 50 L450 150 L450 350 L250 450 L50 350 L50 150 Z"/>
+        <path class="face-profile" d="M200 150 Q220 140, 240 150 Q280 170, 290 220 Q295 250, 280 280 Q260 310, 220 320 Q200 325, 180 320 L200 150"/>
+        <path class="accent" d="M450 150 L450 350 L350 400 L350 200 Z"/>
+    </g>
+</svg> 

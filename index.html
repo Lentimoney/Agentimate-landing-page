@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentimate - Idea to design in seconds</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/images/irish-derm-tutor-logo.svg" alt="Irish Derm Tutor Logo" width="40" height="40">
+            <span>agentimate</span>
+        </div>
+        <div class="nav-links">
+            <a href="#support">Support</a>
+            <a href="#launched">Launched</a>
+            <a href="#learn">Learn</a>
+            <div class="auth-buttons">
+                <button class="sign-in">Sign in</button>
+                <button class="sign-up">Sign up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <div class="gradient-heart" id="floating-heart"></div>
+            <h1 class="main-title">Idea to design in seconds.</h1>
+            <p class="subtitle">Agentimate is your superhuman design assistant.</p>
+            
+            <div class="creative-canvas">
+                <svg class="morphing-shape" width="200" height="200" viewBox="0 0 200 200">
+                    <!-- Shapes will be animated -->
+                    <path class="morph-target" d="M100,10 L190,190 L10,190 Z" fill="none" stroke="url(#gradient)" stroke-width="2"/>
+                </svg>
+                <div class="transformation-text">
+                    <span class="transform-description">Square</span>
+                </div>
+                <svg width="0" height="0">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#ff6b6b"/>
+                            <stop offset="50%" stop-color="#6366f1"/>
+                            <stop offset="100%" stop-color="#4834d4"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="creative-particles">
+                <div class="particles-container">
+                    <!-- Particles will be dynamically added here -->
+                </div>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Ask Agentimate to create a design..." class="search-input">
+                <div class="action-buttons">
+                    <button class="attach-btn">Attach</button>
+                    <button class="import-btn">Import</button>
+                    <button class="visibility-btn">Public</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="testimonials">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Sarah+Smith&background=1B4D3E&color=fff" alt="Dr. Sarah Smith">
+                    </div>
+                    <p class="testimonial-text">"The platform has revolutionized how I teach dermatology. The visual aids and interactive elements are exceptional."</p>
+                    <div class="testimonial-author">
+                        <strong>Dr. Sarah Smith</strong>
+                        <span>Consultant Dermatologist</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+James+Murphy&background=1B4D3E&color=fff" alt="Dr. James Murphy">
+                    </div>
+                    <p class="testimonial-text">"An invaluable resource for both teaching and learning. The case studies are particularly well-structured."</p>
+                    <div class="testimonial-author">
+                        <strong>Dr. James Murphy</strong>
+                        <span>Clinical Professor</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://ui-avatars.com/api/?name=Emma+Walsh&background=1B4D3E&color=fff" alt="Emma Walsh">
+                    </div>
+                    <p class="testimonial-text">"As a medical student, this platform has made learning dermatology much more engaging and practical."</p>
+                    <div class="testimonial-author">
+                        <strong>Emma Walsh</strong>
+                        <span>Final Year Medical Student</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Michael+O'Brien&background=1B4D3E&color=fff" alt="Dr. Michael O'Brien">
+                    </div>
+                    <p class="testimonial-text">"The quality of content and ease of navigation makes this an essential tool for dermatology education."</p>
+                    <div class="testimonial-author">
+                        <strong>Dr. Michael O'Brien</strong>
+                        <span>Dermatology Resident</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Lisa+Kelly&background=1B4D3E&color=fff" alt="Dr. Lisa Kelly">
+                    </div>
+                    <p class="testimonial-text">"Comprehensive, up-to-date, and incredibly user-friendly. A must-have resource for dermatology training."</p>
+                    <div class="testimonial-author">
+                        <strong>Dr. Lisa Kelly</strong>
+                        <span>Senior Registrar</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+David+Chen&background=1B4D3E&color=fff" alt="Dr. David Chen">
+                    </div>
+                    <p class="testimonial-text">"The interactive cases and detailed explanations have greatly enhanced my diagnostic skills."</p>
+                    <div class="testimonial-author">
+                        <strong>Dr. David Chen</strong>
+                        <span>Dermatology Fellow</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="social-proof">
+            <span class="users-count">500,000+</span> designers are creating with Agentimate
+            <div class="rating">
+                <div class="user-avatars">
+                    <div class="avatar"></div>
+                    <div class="avatar"></div>
+                    <div class="avatar"></div>
+                    <div class="avatar"></div>
+                    <div class="avatar"></div>
+                </div>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html> 
