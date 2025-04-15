@@ -1,3 +1,5 @@
+import anime from 'https://cdn.jsdelivr.net/npm/animejs@4.0.1/lib/anime.min.js';
+
 // Initialize animations when the DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Initializing animations...');
